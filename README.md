@@ -67,30 +67,42 @@ DATABASE_ID=your_notion_database_id_here
 
 Install dependencies:
 
+```bash
 pip install python-dotenv
+```
 
 or use the requirements.txt file
 
+```bash
+pip install -r requirements.txt
+```
+
 Then run:
 
+```bash
 python main.py
+```
 
 🔧 Customization
 
     To filter by another MAL status (like “Watching”), change the check in the script:
 
+```python
 if status == 'Watching':
+```
 
 To include MAL score threshold (e.g. only 7+):
-
+    ```python
     if score and score >= 7:
+    ```
+    
+## 📂 Example Output in Notion
 
-📂 Example Output in Notion
-```text
-Name of title	Rating (1–10)
-Akudama Drive	7.57
-Akagami no Shirayuki-hime	7.61
-```
+| Name of title              | Rating (1–10) |
+|---------------------------|---------------|
+| Akudama Drive             | 7.57          |
+| Akagami no Shirayuki-hime | 7.61          |
+
 
 🤝 Credits
 
